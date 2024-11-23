@@ -152,6 +152,10 @@ a {
   justify-content: space-between;
   margin-bottom: 40px;
 }
+.service-item-img img {
+  width:80px;
+  height: auto;
+}
 .service-item {
   display: flex;
   align-items: center;
@@ -471,15 +475,15 @@ a {
 /* Media query for max-width: 567px */
 @media screen and (max-width: 567px) {
   .nav-ctn {
-    margin: 5px 30px 10px 30px;
-    gap: 19px;
+    margin: 10px 15px 10px 20px;
+    gap: 5px;
   }
   .logo img {
     width: 50px;
   }
   .nav ul, li, a {
-    padding: 5px;
-    font-size: 0.5em;
+    padding: 2px;
+    font-size: 0.6em;
   }
   .nav-btn button {
     font-size: 0.5em;
@@ -496,12 +500,10 @@ a {
   .hero-ctn1 {
     gap: 20px;
     flex-direction: column;
-    border: 2px solid rgb(84, 84, 84);
   }
   .hero-ctn2 {
     gap: 50px;
     flex-direction: column;
-    border: 2px solid rgb(84, 84, 84);
     margin-top: 10px;
   }
   .hero {
@@ -549,19 +551,12 @@ a {
   }
   .ourservice {
     margin: 5px 30px 10px 30px;
-    border: 2px solid rgb(31, 31, 31);
-  }
-  .service-ctn{
-    border: 2px solid rgb(84, 84, 84);
-  
   }
   .service-list {
     margin: 15px 15px;
-    border: 2px solid cornflowerblue;
   }
   .designing {
     margin: 5px 30px 10px 30px;
-    border: 2px solid rgb(31, 31, 31);
   }
   .designing-ctn {
     flex-direction: column;
@@ -571,11 +566,6 @@ a {
     width: 100%;
     height: auto;
   }
-  .design-text {
-    /* margin: 15px 20px 15px 20px; */
-    border: 2px solid cornflowerblue;
-    /* padding: 35px; */
-  }
   .design-text h2 {
     font-size: 1.7em;
   }
@@ -584,7 +574,6 @@ a {
   }
   .designing-2 {
     margin: 5px 30px 10px 30px;
-    border: 2px solid rgb(31, 31, 31);
   }
   .design-it2 {
     flex-direction: column-reverse;
@@ -598,7 +587,6 @@ a {
   }
   .whatcustomersay {
     margin: 5px 30px 10px 30px;
-    border: 2px solid rgb(31, 31, 31);
   }
   .whatcustomersay-ctn {
     flex-direction: column;
@@ -665,3 +653,110 @@ a {
   }
   
 } 
+/* Media query for max-width: 768px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .logo img {
+    width: 150px;
+  }
+  .nav ul, li, a {
+    font-size: 1em;
+  }
+  .nav-ctn {
+    margin: 10px 60px 20px 60px;
+  }
+  .nav-btn button {
+    padding: 10px 20px 10px 20px;
+  }
+  .hero {
+    margin: 10px 60px 20px 60px;
+  }
+  .hero-ctn1 {
+    flex-direction: column;
+  }
+  .hero-text1 h1 {
+    font-size: 5.5em;
+    line-height: 1.5;
+  }
+  .hero-text1 p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  .hero-img img {
+    width: 640px;
+  }
+  .hero-ctn2 {
+    flex-direction: column;
+  }
+  .hero-text2 button {
+    font-size: 0.8em;
+    padding: 15px 30px 15px 30px;
+    margin: 20px 0px 20px 0px;
+  }
+  .hero-img2 > img {
+    width: 622px;
+  }
+  .ourservice {
+    margin: 10px 60px 20px 60px;
+  }
+  .service-list {
+    flex-direction: column;
+    margin: 20px 30px;
+  }
+  .service-item {
+    gap: 50px;
+    margin-top: 30px;
+  } 
+  .service-item-img img {
+    width:80px;
+  }
+  .service-item-text span {
+    font-size: 1.8em;
+    line-height: 1.5;
+  }
+  .service-item-text p {
+    font-size: 1em;
+    line-height: 1.2;
+  } 
+  .designing {
+    margin: 10px 60px 20px 60px;
+  }
+  .designing-ctn {
+    flex-direction: column;
+  }
+  .design-img img {
+    width: 643px;
+    height: auto;
+  }
+  .design-text h2 {
+    font-size: 3.5em;
+    margin-bottom: 30px;
+  }
+  .design-text > p {
+    font-size: 1em;
+    line-height: 1.3;
+  }
+  .design-accordion p {
+    font-size: 1em;
+  }
+  .design-btn button {
+    margin-top: 30px;
+  }
+  .design-it2 {
+    flex-direction: column-reverse;
+  }
+  .step-img img {
+    width: 554px;
+    height: auto;
+  }
+  .whatcustomersay-ctn {
+   flex-direction: column;
+   gap: 90px;
+  }
+  .footer-ctn {
+    margin: 20px 60px 20px 60px;
+  }
+  .footerlink li, a {
+    padding: 5px;
+  }
+}
